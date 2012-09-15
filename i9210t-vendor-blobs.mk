@@ -112,14 +112,4 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/i9210t/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
 	vendor/samsung/i9210t/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
 	vendor/samsung/i9210t/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
-	vendor/samsung/i9210t/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
-	vendor/samsung/i9210t/proprietary/csc/contents.db:system/csc/contents.db \
-	vendor/samsung/i9210t/proprietary/csc/customer.xml:system/csc/customer.xml \
-	vendor/samsung/i9210t/proprietary/csc/feature.xml:system/csc/feature.xml \
-	vendor/samsung/i9210t/proprietary/csc/isnew_csc.txt:system/csc/isnew_csc.txt \
-	vendor/samsung/i9210t/proprietary/csc/others.xml:system/csc/others.xml \
-	vendor/samsung/i9210t/proprietary/csc/sales_code.dat:system/csc/sales_code.dat \
-	vendor/samsung/i9210t/proprietary/CSCFiles.txt:system/CSCFiles.txt \
-	vendor/samsung/i9210t/proprietary/CSCVersion.txt:system/CSCVersion.txt \
-	vendor/samsung/i9210t/proprietary/SW_Configuration.xml
-
+	vendor/samsung/i9210t/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw
