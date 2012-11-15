@@ -1,4 +1,4 @@
-Fmanfid=0x2d0
+manfid=0x2d0
 prodid=0x0532
 vendid=0x14e4
 devid=0x4360
@@ -11,10 +11,11 @@ xtalfreq=37400
 xtalmode=0x20,0x4,0
 boardnum=22
 macaddr=00:90:4c:c5:12:38
-ag0=252
-ag1=252
+ag0=253
+ag1=255
 aa2g=1
-ccode=EU
+ccode=US
+regrev=5
 
 btc_params80=0
 btc_params6=10
@@ -23,39 +24,35 @@ btc_params8=10000
 sd_gpout=0
 sd_oobonly=1
 
-
-#B48_R03 18.5_15.5_13.5 15_13 110829
-
-
 # 2G PA param
-pa0b0=0x16A6
-pa0b1=0xFD65
-pa0b2=0xFF56
+pa0b0=0x14AA
+pa0b1=0xFDB3
+pa0b2=0xFF6F
 #pa0itssit=62
 rssismf2g=0xa
 rssismc2g=0x3
 rssisav2g=0x7
 
-# rssi params for 5GHz
+# rssi params for 5GHz B42_110728
 #rssismf5g=0x4
 rssismf5g=0xa
 rssismc5g=0x7
 rssisav5g=0x1
 #PA parameters for lower band
-pa1lob0=0x18A8
-pa1lob1=0xFCF7
-pa1lob2=0xFF32
+pa1lob0=4676
+pa1lob1=64858
+pa1lob2=65301
 #PA parameters for midband
-pa1b0=0x185A
-pa1b1=0xFCFB
-pa1b2=0xFF33
+pa1b0=4445
+pa1b1=64883
+pa1b2=65310
 #PA parameters for high band
-pa1hib0=0x17FC
-pa1hib1=0xFD0A
-pa1hib2=0xFF34
+pa1hib0=4567
+pa1hib1=64876
+pa1hib2=65332
 
 # 2G PA offset
-maxp2ga0=86
+maxp2ga0=76
 sromrev=3
 cckpo=0
 ofdm2gpo=0x66666666
@@ -63,12 +60,12 @@ mcs2gpo0=0xaaaa
 mcs2gpo1=0xaaaa
 
 # 5G PA offset
-maxp5ga0=70
-maxp5gla0=72
-maxp5gha0=70
-ofdm5gpo=0x22222222
-ofdm5glpo=0x22222222
-ofdm5ghpo=0x22222222
+maxp5ga0=66
+maxp5gla0=66
+maxp5gha0=66
+ofdm5gpo=0x66666666
+ofdm5glpo=0x66666666
+ofdm5ghpo=0x55555555
 mcs5gpo0=0x6666
 mcs5gpo1=0x6666
 mcs5glpo0=0x6666
@@ -110,10 +107,7 @@ noise_cal_enable_2g=1
 triso5g=9
 
 # Tx power control, especially temp.
-#tssitime=1
-
-#fc+1.7GHz Spur Elimination
-loidacmode5g=1
+tssitime=1
 
 swctrlmap_2g=0x84048404, 0x82028202, 0x84048404, 0x010202, 0x1ff
 swctrlmap_5g=0xC040C040, 0xB030A020, 0xA020C040, 0x010A02, 0x2F8
