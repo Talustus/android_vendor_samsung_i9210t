@@ -113,6 +113,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/i9210t/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
 	vendor/samsung/i9210t/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
 	vendor/samsung/i9210t/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
-	vendor/samsung/skyrocket/proprietary/lib/libfmradio.brcm-prop_rx.so:system/lib/libfmradio.brcm-prop_rx.so \
-	vendor/samsung/skyrocket/proprietary/lib/libfmradio.so:system/lib/libfmradio.so \
-	vendor/samsung/skyrocket/proprietary/bin/btld:system/bin/btld
+	vendor/samsung/i9210t/proprietary/lib/libfmradio.brcm-prop_rx.so:system/lib/libfmradio.brcm-prop_rx.so \
+	vendor/samsung/i9210t/proprietary/lib/libfmradio.so:system/lib/libfmradio.so \
+	vendor/samsung/i9210t/proprietary/bin/btld:system/bin/btld
