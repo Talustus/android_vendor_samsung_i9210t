@@ -23,16 +23,10 @@ PRODUCT_COPY_FILES += \
 # Proprietary files
 PRODUCT_COPY_FILES += \
 	vendor/samsung/i9210t/proprietary/lib/hw/nfc.qcom.so:system/lib/hw/nfc.qcom.so \
+	vendor/samsung/i9210t/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
 	vendor/samsung/i9210t/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
 	vendor/samsung/i9210t/proprietary/etc/wifi/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
-	vendor/samsung/i9210t/proprietary/bin/immvibed:system/bin/immvibed \
-	vendor/samsung/i9210t/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
-	vendor/samsung/i9210t/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
-	vendor/samsung/i9210t/proprietary/bin/btnvtool:system/bin/btnvtool \
 	vendor/samsung/i9210t/proprietary/bin/mpdecision:system/bin/mpdecision \
-	vendor/samsung/i9210t/proprietary/bin/port-bridge:system/bin/port-bridge \
-	vendor/samsung/i9210t/proprietary/bin/usbhub:system/bin/usbhub \
-	vendor/samsung/i9210t/proprietary/bin/usbhub_init:system/bin/usbhub_init \
 	vendor/samsung/i9210t/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
 	vendor/samsung/i9210t/proprietary/lib/libacdbmapper.so:system/lib/libacdbmapper.so \
 	vendor/samsung/i9210t/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
@@ -75,13 +69,16 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/i9210t/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
 	vendor/samsung/i9210t/proprietary/lib/libidl.so:system/lib/libidl.so \
 	vendor/samsung/i9210t/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
+	vendor/samsung/i9210t/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
+	vendor/samsung/i9210t/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
+	vendor/samsung/i9210t/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
+	vendor/samsung/i9210t/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
+	vendor/samsung/i9210t/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
 	vendor/samsung/i9210t/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
-	vendor/samsung/i9210t/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
-	vendor/samsung/i9210t/proprietary/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
 	vendor/samsung/i9210t/proprietary/lib/libloc_api-rpc-qc.so:system/lib/libloc_api-rpc-qc.so \
-	vendor/samsung/i9210t/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
 	vendor/samsung/i9210t/proprietary/lib/libcommondefs.so:system/lib/libcommondefs.so \
-	vendor/samsung/i9210t/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
+	vendor/samsung/i9210t/proprietary/lib/librpc.so:system/lib/librpc.so \
+	vendor/samsung/i9210t/proprietary/lib/hw/sensors.MSM8660_SURF.so:system/lib/hw/sensors.MSM8660_SURF.so \
 	vendor/samsung/i9210t/proprietary/lib/libakm.so:system/lib/libakm.so \
 	vendor/samsung/i9210t/proprietary/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
 	vendor/samsung/i9210t/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
@@ -93,17 +90,13 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/i9210t/proprietary/lib/libmmstereo.so:system/lib/libmmstereo.so \
 	vendor/samsung/i9210t/proprietary/lib/libdiag.so:system/lib/libdiag.so \
 	vendor/samsung/i9210t/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
-	vendor/samsung/i9210t/proprietary/etc/wifi/bcm4330_apsta.bin:system/etc/wifi/bcm4330_apsta.bin \
-	vendor/samsung/i9210t/proprietary/etc/wifi/wl:system/etc/wifi/wl \
+	vendor/samsung/i9210t/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
 	vendor/samsung/i9210t/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
 	vendor/samsung/i9210t/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-	vendor/samsung/i9210t/proprietary/etc/wifi/bcm4330_p2p.bin:system/etc/wifi/bcm4330_p2p.bin \
-	vendor/samsung/i9210t/proprietary/etc/wifi/bcm4330_sta.bin:system/etc/wifi/bcm4330_sta.bin \
-	vendor/samsung/i9210t/proprietary/etc/wifi/bcm4330_mfg.bin:system/etc/wifi/bcm4330_mfg.bin \
+	vendor/samsung/i9210t/proprietary/etc/wifi/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
+	vendor/samsung/i9210t/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
+	vendor/samsung/i9210t/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
 	vendor/samsung/i9210t/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
-	vendor/samsung/i9210t/proprietary/etc/firmware/cyttsp_8660_ffa.hex:system/etc/firmware/cyttsp_8660_ffa.hex \
-	vendor/samsung/i9210t/proprietary/etc/firmware/cyttsp_8660_fluid_p2.hex:system/etc/firmware/cyttsp_8660_fluid_p2.hex \
-	vendor/samsung/i9210t/proprietary/etc/firmware/cyttsp_8660_fluid_p3.hex:system/etc/firmware/cyttsp_8660_fluid_p3.hex \
 	vendor/samsung/i9210t/proprietary/etc/firmware/dsps_fluid.b00:system/etc/firmware/dsps_fluid.b00 \
 	vendor/samsung/i9210t/proprietary/etc/firmware/dsps_fluid.b01:system/etc/firmware/dsps_fluid.b01 \
 	vendor/samsung/i9210t/proprietary/etc/firmware/dsps_fluid.b02:system/etc/firmware/dsps_fluid.b02 \
@@ -113,4 +106,9 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/i9210t/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
 	vendor/samsung/i9210t/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
 	vendor/samsung/i9210t/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
-	vendor/samsung/i9210t/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw
+	vendor/samsung/i9210t/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
+	vendor/samsung/i9210t/proprietary/bin/thermald:system/bin/thermald \
+	vendor/samsung/i9210t/proprietary/etc/thermald.conf:system/etc/thermald.conf \
+	vendor/samsung/i9210t/proprietary/lib/libdsm.so:system/lib/libdsm.so \
+	vendor/samsung/i9210t/proprietary/lib/libthermal_mitigation_fusion.so:system/lib/libthermal_mitigation_fusion.so \
+	vendor/samsung/i9210t/proprietary/lib/libthermal_mitigation.so:system/lib/libthermal_mitigation.so
